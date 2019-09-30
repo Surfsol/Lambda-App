@@ -2,6 +2,12 @@ import React from 'react'
 import {Route, NavLink} from 'react-router-dom'
 import csb3 from './assets/ClassComponents/csb3.png'
 import csb1 from './assets/ClassComponents/csb1.png'
+import ccr from './assets/ClassComponents/ccr.png'
+import {
+    Card, CardImg, CardText, CardBody,
+    CardTitle, CardSubtitle, Button
+  } from 'reactstrap';
+  
 import styled from "styled-components"
 
 
@@ -20,6 +26,7 @@ function ClassComponents(){
         <div>
             
             <h1>Class Components</h1>
+            <p>function components now same functionality as class components, but there are a lot of companies still using class components</p>
             <h2>Code Sandbox</h2>
             <ul>
                 
@@ -41,10 +48,7 @@ function ClassComponents(){
             </ul>
             <Container>
             <p>React.Component </p>
-            <p>Extends a base class</p>
-            <p>base class that allows us to use  Component Lifecycle Methods</p>
-            <p>life cycle hooks,  give us control into how our components work </p>
-            <p>React.Component parent class and you have the ability to tap into these methods.</p>
+            <p>Extends a base class, Lifecycle Methods, such as constructor(), render(), setState()</p>
             <p>Render function - react takes code, pipes through dom, and uses code to create dom elements</p>
             <p>Class components can hold state (data)</p>
 
@@ -54,7 +58,10 @@ function ClassComponents(){
                 <li>2 Use the constructor function to set up some state. because we’re calling extends, we also 
                     need to call super(); otherwise we wont have access the this</li>
                 <li>3 Render some sort of UI to the DOM. We do this by calling the life-cycle method called render.</li>
+                <li><img src={ccr}/></li>
             </ol>
+
+
 
 
             <ul><h3>Using State</h3>
@@ -68,16 +75,21 @@ function ClassComponents(){
                 <li>state can be changed through set state method</li>
                 <li>Can pass state around as props throughout multiple levels of components</li>
                 <li>When state is passed around props change too</li>
+                <li><a target="_blank" href="https://www.robinwieruch.de/react-state-array-add-update-remove">Manage arrays in react state</a></li>
             </ul>
 
             <p>interpolation in order to present it to the DOM within some Text</p>
 
-            <h3>state to props. </h3>           
-            <p> React if we can’t pass state around from one component to another</p>
-            <p>Whatever is set on the state of our Components can be shared between components by passing it down as props</p>
-            <p>Because state is as persistent as long as the component is on the screen, we can use it to hold on to memory 
+        <CardTitle>state to props. </CardTitle>
+          <CardSubtitle>React if we can’t pass state around from one component to another</CardSubtitle>
+          <CardText>Whatever is set on the state of our Components can be shared between components by passing it down as props</CardText>
+          <CardText>Whatever is set on the state of our Components can be shared between components by passing it down as props</CardText>
+
+          <CardText>Because state is as persistent as long as the component is on the screen, we can use it to hold on to memory 
                 for our application. That memory could be any data that we pull in from a server elsewhere, some edits from
-                 a submission form or simply just based on Users interacting with your web page.</p>
+                 a submission form or simply just based on Users interacting with your web page.</CardText>
+
+            
             
             <h2>setState</h2>
             <p>Only way to change state</p>
