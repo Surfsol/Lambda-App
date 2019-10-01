@@ -3,6 +3,8 @@ import {Route, NavLink} from 'react-router-dom'
 import csb3 from './assets/ClassComponents/csb3.png'
 import csb1 from './assets/ClassComponents/csb1.png'
 import ccr from './assets/ClassComponents/ccr.png'
+import todo from './assets/ClassComponents/todo.png'
+import shoplist from './assets/ClassComponents/shoppinglist.png'
 import {
     Card, CardImg, CardText, CardBody,
     CardTitle, CardSubtitle, Button
@@ -24,12 +26,26 @@ const Container = styled.div`
 function ClassComponents(){
     return(
         <div>
-            
+            <li><img src={todo}/></li>
+            <ul>
+                <li>1. create class and extend from React.Component</li>
+                <li>2. Add constructor and state</li>
+                <li>3. Render, return</li>
+                <li>Return: send props to TodoForm and TodoList</li>
+                <li>Todo.js is child of TodoList</li>
+                <li>TodoList.js extends props to Todo.  Also, contains function and button completedTask </li>
+                <li>Todo.js create div for each item and display task, while linking id to toggleItem, so .completed can be toggled true or fales </li>
+                <li>TodoForm.js form to add a new item, then will setState and re-render</li>
+            </ul>
+
             <h1>Class Components</h1>
             <p>function components now same functionality as class components, but there are a lot of companies still using class components</p>
             <h2>Code Sandbox</h2>
             <ul>
                 
+            <li><a target="_blank" href="https://codesandbox.io/s/class-components-ii-start-zrwli">Guided Project</a></li>
+            <li><img src={shoplist}/></li>
+            <li><a target="_blank" href="https://codesandbox.io/s/compassionate-shadow-kej41">Completed guided project</a></li>
             <li><a target="_blank" href="https://codesandbox.io/s/3xwzql38nm">Code Sandbox 1</a></li>
                 <a target="_blank" href="https://codesandbox.io/s/flamboyant-yalow-qkll3">Code Sandbox 1 complete</a>
                 <a target="_blank" href="https://codesandbox.io/s/upbeat-lalande-92vhy">Code Sandbox 1 complete</a>
@@ -41,11 +57,14 @@ function ClassComponents(){
 
             </ul>
             <ul><h2>youtube videos</h2>
+                <li><a target="_blank" href="https://www.youtube.com/watch?v=Y9J3IuFEJJc&feature=youtu.be">Class Components</a></li>
                 <li><a target="_blank" href="https://youtu.be/lksl2l5sVek">Class Components</a></li>
                 <li><a target="_blank" href="https://youtu.be/qRPM_CWPRfM">State props</a></li>
                 <li><a target="_blank" href="https://youtu.be/8SELYmSaRvA">Event handlers</a></li>
                 <li><a target="_blank" href="https://medium.com/beginners-guide-to-mobile-web-development/super-and-extends-in-javascript-es6-understanding-the-tough-parts-6120372d3420">Super() Article</a></li>
+                <li><a target="_blank" href="https://love2dev.com/blog/javascript-remove-from-array/">Remove item from array</a></li>
             </ul>
+            
             <Container>
             <p>React.Component </p>
             <p>Extends a base class, Lifecycle Methods, such as constructor(), render(), setState()</p>
@@ -61,7 +80,8 @@ function ClassComponents(){
                 <li><img src={ccr}/></li>
             </ol>
 
-
+            <p>constructor() initializes state</p>
+             <p>use super()</p>
 
 
             <ul><h3>Using State</h3>
