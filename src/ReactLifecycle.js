@@ -9,6 +9,19 @@ function ReactLifecycle(){
         <div>
         <img src={usercards}/>
         <li><a target="_blank" href="https://github.com/Surfsol/React-Github-User-Card">React-Github-User-Card</a></li>
+        <h2>Project: github api, show surfsol and followers</h2>
+        <h4>Learnt: destructure object.  https://wesbos.com/destructuring-objects/</h4>
+        <p>find and assign the value of name and url in props.object to name, last</p>
+        </div>
+        <div>
+        <li><a target="_blank" href="https://codesandbox.io/s/component-lifecycle-start-5swrf">Code Sandbox Doggo</a></li>
+        <li><a target="_blank" href="https://codesandbox.io/s/cranky-lamport-qvymi">Code sandbox pokemon</a></li>
+        <li><a target="_blank" href="https://codesandbox.io/s/compassionate-shadow-kej41">Code sandbox hello</a></li>
+        
+        
+        </div>
+
+        <div>
             <h1>Component Lifecycle 3 phrases</h1>
             <p>Mounting, Updating/re-render, Unmonunting</p>
             mount - functions while mount effects run
